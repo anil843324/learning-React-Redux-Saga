@@ -1,9 +1,7 @@
 
 import { createStore } from "redux"
+import rootReduer from "./rootReduer"
 
-const store=createStore(()=>{
-
-    return 100;
-})
+const store=createStore(rootReduer )
 
 export default store
