@@ -3,19 +3,21 @@ import { ADD_TO_CART} from "./constant"
 
  export  const cartData=(data=[],action)=>{
 
-   
-   if(action.type===ADD_TO_CART){
-    console.log("reducer called",action);
-    return action.data;
-   }else{
-    return "No action matched"
-   }
-   
-   
 
-     
+      switch(action.type){
+ 
+         case ADD_TO_CART:
+          // add to car logic
+          console.log("Add to cart ",action);
+          return [action.data,...data]  
+          default :
+          // no case matched
+           return data;
 
 
+
+      }
+   
 
 
 

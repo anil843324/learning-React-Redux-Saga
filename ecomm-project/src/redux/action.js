@@ -1,5 +1,5 @@
-import { ADD_TO_CART} from "./constant"
 
+import { ADD_TO_CART} from "./constant"
 export const addToCart = (data) => {
 
     console.log("action called", data)
@@ -9,3 +9,5 @@ export const addToCart = (data) => {
     }
 
 }
+
+
