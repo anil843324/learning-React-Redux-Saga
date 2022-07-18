@@ -13,7 +13,7 @@ const Header = () => {
 
        <div className='cart-div'>
          
-          <span>0</span>
+          <span>{result.length}</span>
           <img src="https://www.freeiconspng.com/thumbs/cart-icon/cart-icon-14.png" alt="logo" />
            
        </div>
