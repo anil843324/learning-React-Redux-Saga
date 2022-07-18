@@ -14,7 +14,7 @@ export const cartData = (data = [], action) => {
                // add to car logic
                console.log("REMOVE_FROM_CART ", action);
                   let filterData=data.filter((ele) =>ele.id!==action.payload)
-               return [...filterData]
+               return [...filterData]  
           case EMPTY_CART:
                // add to car logic
                console.log("EMPTY_CART ", action);
