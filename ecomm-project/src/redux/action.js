@@ -11,12 +11,12 @@ export const addToCart = (data) => {
 
 }
 
-export const removeFromCart = (data) => {
+export const removeFromCart = (id) => {
 
-    console.log("action removeFromCart", data)
+   
     return {
         type: REMOVE_FROM_CART,
-        data
+        payload:id
     }
 
 }
