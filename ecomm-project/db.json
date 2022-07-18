@@ -1,0 +1,40 @@
+{
+  "products":[
+   {
+    "id":1,
+    "name":"Samsung m40",
+    "color":"black",
+    "category":"Mobile",
+    "brand":"Samsung",
+     "photo":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m40-m405f.jpg"
+   },
+   {
+    "id":2,
+    "name":"Samsung A5",
+    "color":"golden",
+    "category":"Mobile",
+    "brand":"Samsung",
+     "photo":"https://3.bp.blogspot.com/-xp9gMfFzQac/VpNhFCzRdvI/AAAAAAAACkk/JPySiKEbVQo/s1600/samsung-galaxy-a5-2016-1.jpg"
+   },
+   {
+    "id":3,
+    "name":"Samsung f13",
+    "color":"balck",
+    "category":"Mobile",
+    "brand":"Samsung",
+     "photo":"https://mobileinto.com/images/Samsung-Galaxy-F13.jpg"
+   },
+   {
+    "id":4,
+    "name":"Samsung f12",
+    "color":"blue",
+    "category":"Mobile",
+    "brand":"Samsung",
+     "photo":"https://priceinzimbabwe.com/wp-content/uploads/2021/05/Samsung-Galaxy-F12-Price-in-Zimbabwe.jpg"
+   }
+
+
+
+
+]
+}
