@@ -10,7 +10,7 @@ function Main() {
 
  const data=useSelector((state)=>state.productData)
  
-  console.log("Data in Main Component",data);
+  console.log("Data in Main Component from saga",data);
 
   const products = {
     name: "I phone",
