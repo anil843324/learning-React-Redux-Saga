@@ -13,13 +13,13 @@ import { ADD_TO_CART ,REMOVE_FROM_CART ,EMPTY_CART} from "./constant"
           case REMOVE_FROM_CART:
                // add to car logic
                console.log("REMOVE_FROM_CART ",action);
-               data.length=data.length-1
+               data.length=data.length?data.length-1:[]
                return [...data] 
                case EMPTY_CART:
                     // add to car logic
                     console.log("EMPTY_CART ",action);
-                     
-                    return data=[]
+                    data=[]
+                    return [...data]
      
 
           default :

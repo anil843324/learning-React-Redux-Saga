@@ -2,9 +2,15 @@
 import { addToCart, emptyFromCart, removeFromCart } from "../redux/action"
 
 import { useDispatch } from "react-redux"
+import {useSelector} from  "react-redux"
+import { productList } from "../redux/productAction";
 function Main() {
 
   const dispatch = useDispatch();
+
+ const data=useSelector((state)=>state.productData)
+ 
+  console.log("Data in Main Component",data);
 
   const products = {
     name: "I phone",
@@ -27,6 +33,9 @@ function Main() {
       <button
         onClick={() => dispatch(emptyFromCart( ))}
       >Empty cart</button>
+ <button
+        onClick={() => dispatch(productList( ))}
+      >Product List</button>
 
     </div>
   );
