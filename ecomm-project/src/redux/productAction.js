@@ -1,12 +1,8 @@
+import { PRODUCT_LIST } from "./constant";
 
-import { PRODUCT_LIST } from "./constant"
-
-//  get call to fetech data through saga 
+//  get call to fetech data through saga
 export const productList = () => {
-
-    return {
-        type:PRODUCT_LIST,
-    }
-
-}
-
+  return {
+    type: PRODUCT_LIST,
+  };
+};
