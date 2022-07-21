@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchBox input{
+ 
+     width: 400px;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+}
