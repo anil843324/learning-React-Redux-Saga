@@ -1,0 +1,43 @@
+.cart-page-conatiner{
+       display: flex;
+       margin-left: 30px;
+       margin-right: 30px;
+ 
+}
+
+
+.cart-page-conatiner table{
+
+  flex: 65%;
+  border-collapse: collapse;
+
+
+}
+
+.cart-page-conatiner table td{
+
+  border: 1px solid #ccc;
+  padding: 15px;
+
+}
+
+.price-detilas{
+   flex: 35%;
+   margin: 0px 30px;
+
+}
+
+.price-detilas .adjust-price{
+   
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 10px;
+     padding-bottom: 10px;
+     border-bottom: 2px solid gray;
+    
+
+} 
+
+.price-detilas .adjust-price span{
+    font-size: 20px;
+}

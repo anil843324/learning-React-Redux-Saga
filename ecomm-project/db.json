@@ -29,14 +29,40 @@
    },
    {
     "id":4,
+    "name":"iphone 12",
+    "price":59999,
+    "color":"blue",
+    "category":"Mobile",
+    "brand":"Apple",
+     "photo":"https://rukminim1.flixcart.com/image/416/416/ko0d6kw0/mobile/6/h/y/iphone-12-mjnm3hn-a-apple-original-imag2k2v6ehvnzfd.jpeg?q=70"
+   },
+   {
+    "id":5,
     "name":"Samsung f12",
     "price":11000,
     "color":"blue",
     "category":"Mobile",
     "brand":"Samsung",
      "photo":"https://priceinzimbabwe.com/wp-content/uploads/2021/05/Samsung-Galaxy-F12-Price-in-Zimbabwe.jpg"
+   },
+   {
+    "id":6,
+    "name":"Micromax IN Note 1",
+    "price":10999,
+    "color":"blue",
+    "category":"Mobile",
+    "brand":"Micromax",
+     "photo":"https://rukminim1.flixcart.com/image/416/416/kgzg8sw0/mobile/h/y/v/micromax-in-note-1-e7746-original-imafx3wgagaastdk.jpeg?q=70"
+   },
+   {
+    "id":7,
+    "name":"Nothing Phone (1)",
+    "price":35000,
+    "color":"white",
+    "category":"Mobile",
+    "brand":"Nothing",
+     "photo":"https://rukminim1.flixcart.com/image/416/416/l5h2xe80/mobile/4/7/l/-original-imagg4y3grhaxckf.jpeg?q=70"
    }
-
 
 
 
