@@ -5,6 +5,7 @@
     "name":"Samsung m40",
     "color":"black",
     "category":"Mobile",
+    "qunty":1,
     "brand":"Samsung",
     "price":12000,
      "photo":"https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m40-m405f.jpg"
@@ -14,6 +15,7 @@
     "name":"Samsung A5",
     "color":"golden",
     "category":"Mobile",
+    "qunty":1,
     "price":20000,
     "brand":"Samsung",
      "photo":"https://3.bp.blogspot.com/-xp9gMfFzQac/VpNhFCzRdvI/AAAAAAAACkk/JPySiKEbVQo/s1600/samsung-galaxy-a5-2016-1.jpg"
@@ -23,6 +25,7 @@
     "name":"Samsung f13",
     "color":"balck",
     "category":"Mobile",
+    "qunty":1,
     "price":10000,
     "brand":"Samsung",
      "photo":"https://mobileinto.com/images/Samsung-Galaxy-F13.jpg"
@@ -32,6 +35,7 @@
     "name":"iphone 12",
     "price":59999,
     "color":"blue",
+    "qunty":1,
     "category":"Mobile",
     "brand":"Apple",
      "photo":"https://rukminim1.flixcart.com/image/416/416/ko0d6kw0/mobile/6/h/y/iphone-12-mjnm3hn-a-apple-original-imag2k2v6ehvnzfd.jpeg?q=70"
@@ -40,6 +44,7 @@
     "id":5,
     "name":"Samsung f12",
     "price":11000,
+    "qunty":1,
     "color":"blue",
     "category":"Mobile",
     "brand":"Samsung",
@@ -49,6 +54,7 @@
     "id":6,
     "name":"Micromax IN Note 1",
     "price":10999,
+    "qunty":1,
     "color":"blue",
     "category":"Mobile",
     "brand":"Micromax",
@@ -58,6 +64,7 @@
     "id":7,
     "name":"Nothing Phone (1)",
     "price":35000,
+    "qunty":1,
     "color":"white",
     "category":"Mobile",
     "brand":"Nothing",

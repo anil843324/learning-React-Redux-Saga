@@ -8,7 +8,7 @@
 
 .cart-page-conatiner table{
 
-  flex: 65%;
+  flex: 80%;
   border-collapse: collapse;
 
 
@@ -22,7 +22,7 @@
 }
 
 .price-detilas{
-   flex: 35%;
+   flex: 20%;
    margin: 0px 30px;
 
 }
@@ -40,4 +40,22 @@
 
 .price-detilas .adjust-price span{
     font-size: 20px;
+}
+
+.pic{
+  width: 80px;
+  height: 100px;
+}
+.quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button{
+
+   cursor: pointer;
+   font-size: 25px;
+  border-radius: 5px;
 }

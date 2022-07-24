@@ -8,25 +8,7 @@ const Header = () => {
 
   const dispatch=useDispatch()
  
-   const [inputData,setInutData]=useState("")
-
-  const queryUser =(e) => {
-
-     setInutData(e.target.value)
-    dispatch(productSearch(inputData))
-
    
-  };
-
-  useEffect(() => {
-    let timeout = setTimeout(() => {
-      queryUser();
-
-    }, 5000);
-
-    return () => clearTimeout(timeout);
-  }, [inputData]);
-
 
   return (
     <div className="header">
@@ -38,8 +20,8 @@ const Header = () => {
         <input
           type="text"
           placeholder="Search Products"
-          value={inputData}
-          onChange={(e) => {queryUser(e)} }
+         
+          onChange={(e) => {dispatch(productSearch(e.target.value))} }
         />
       </div>
       <Link to="/cart">

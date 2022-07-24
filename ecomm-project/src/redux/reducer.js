@@ -6,6 +6,7 @@ export const cartData = (data = [], action) => {
     case ADD_TO_CART:
       // add to car logic
       console.log("Add to cart ", action);
+       
       return [action.data, ...data];
     case REMOVE_FROM_CART:
       // add to car logic

@@ -1,15 +1,17 @@
-import { addToCart, emptyFromCart, removeFromCart } from "../redux/action";
+import { addToCart, emptyFromCart } from "../redux/action";
 
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { productList } from "../redux/productAction";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 function Main() {
   const dispatch = useDispatch();
 
   const data = useSelector((state) => state.productData);
 
   console.log("Data in Main Component from saga", data);
+
+ 
 
   useEffect(() => {
     dispatch(productList());
@@ -31,9 +33,7 @@ function Main() {
               <button onClick={() => dispatch(addToCart(ele))}>
                 Add to cart
               </button>
-              <button onClick={() => dispatch(removeFromCart(ele.id))}>
-                Remove from cart
-              </button>
+            
             </div>
           </div>
         ))}
