@@ -16,12 +16,14 @@ function Cart() {
     cartData.length &&
     cartData.map((ele) => ele.price).reduce((prev, next) => prev + next);
 
-    
- 
-   
-    
-    
+    let sum=0;
+    cartData.length && cartData.map((ele)=>{
      
+        sum=sum+(ele.qunty*ele.price) 
+
+    })
+     
+    
 
   return (
     <div>
@@ -82,15 +84,15 @@ function Cart() {
           <h1>Total Product Price</h1>
           <div className="adjust-price">
             <span>Amount </span>
-            <span>{amount}</span>
+            <span>{sum}</span>
           </div>
           <div className="adjust-price">
             <span> Discount </span>
-            <span>{Math.floor(amount / 10)}</span>
+            <span>{Math.floor(sum / 10)}</span>
           </div>
           <div className="adjust-price">
             <span> Total</span>
-            <span>{amount - Math.floor(amount / 10)}</span>
+            <span>{sum - Math.floor(sum / 10)}</span>
           </div>
         </div>
       </div>

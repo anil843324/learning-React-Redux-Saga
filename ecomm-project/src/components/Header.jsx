@@ -6,7 +6,10 @@ import "./Header.css";
 const Header = () => {
   const result = useSelector((state) => state.cartData);
 
-    
+  let quantity =
+  result.length &&
+  result.map((ele) => ele.qunty).reduce((prev, next) => prev + next);
+       
 
 
   const dispatch=useDispatch()
@@ -29,7 +32,7 @@ const Header = () => {
       </div>
       <Link to="/cart">
         <div className="cart-div">
-          <span>{result.length}</span>
+          <span>{quantity}</span>
           <img
             src="https://www.freeiconspng.com/thumbs/cart-icon/cart-icon-14.png"
             alt="logo"
