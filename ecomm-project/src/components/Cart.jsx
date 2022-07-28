@@ -1,16 +1,27 @@
 import "../App.css";
 import "./Cart.css";
-import { useSelector ,useDispatch} from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { removeFromCart } from "../redux/action";
+import {
+  decrementQuantity,
+  incrementQuantity,
+  removeFromCart,
+} from "../redux/action";
 
 function Cart() {
   const cartData = useSelector((state) => state.cartData);
 
-   const dispatch=useDispatch()
+  const dispatch = useDispatch();
   let amount =
     cartData.length &&
     cartData.map((ele) => ele.price).reduce((prev, next) => prev + next);
+
+    
+ 
+   
+    
+    
+     
 
   return (
     <div>
@@ -38,15 +49,29 @@ function Cart() {
                   <td>{ele.price}</td>
                   <td>
                     <span className="quantity">
-                      <button>+</button>
+                      <button
+                        onClick={() => dispatch(decrementQuantity(ele.id))}
+                      >
+                        -
+                      </button>
                       <h3>{ele.qunty}</h3>
-                      <button>-</button>
+                      <button
+                        onClick={() => dispatch(incrementQuantity(ele.id))}
+                      >
+                        +
+                      </button>
                     </span>
                   </td>
                   <td>{ele.brand}</td>
-                   <td> <button style={{cursor:"pointer"}} onClick={() => dispatch(removeFromCart(ele.id))}>
-                   Delete
-              </button></td>
+                  <td>
+                    {" "}
+                    <button
+                      style={{ cursor: "pointer" }}
+                      onClick={() => dispatch(removeFromCart(ele.id))}
+                    >
+                      Delete
+                    </button>
+                  </td>
                 </tr>
               </>
             );

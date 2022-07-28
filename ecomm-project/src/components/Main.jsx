@@ -33,7 +33,6 @@ function Main() {
               <button onClick={() => dispatch(addToCart(ele))}>
                 Add to cart
               </button>
-            
             </div>
           </div>
         ))}

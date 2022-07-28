@@ -6,6 +6,9 @@ import "./Header.css";
 const Header = () => {
   const result = useSelector((state) => state.cartData);
 
+    
+
+
   const dispatch=useDispatch()
  
    
