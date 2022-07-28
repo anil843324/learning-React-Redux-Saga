@@ -9,9 +9,36 @@ function Main() {
 
   const data = useSelector((state) => state.productData);
 
+  const cartData = useSelector((state) => state.cartData);
+
   console.log("Data in Main Component from saga", data);
 
  
+        const handleAdd=(ele)=>{
+
+           let checkData=cartData.find((el)=> el.id===ele.id)
+            
+             if(checkData){
+               
+              alert("Alreaday Data Added")
+              
+             }else{
+              dispatch(addToCart(ele))
+              
+             }
+
+
+
+
+          
+
+        }
+
+
+
+
+
+
 
   useEffect(() => {
     dispatch(productList());
@@ -30,7 +57,7 @@ function Main() {
             <span>Brand:{ele.brand}</span>
             <span>Rs:{ele.price}</span>
             <div>
-              <button onClick={() => dispatch(addToCart(ele))}>
+              <button onClick={() => handleAdd(ele) }>
                 Add to cart
               </button>
             </div>

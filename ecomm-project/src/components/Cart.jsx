@@ -32,12 +32,12 @@ function Cart() {
       <div className="cart-page-conatiner">
         <table>
           <tr>
-            <td>Name</td>
-            <td>Image</td>
-            <td>Price</td>
-            <td>Quantity</td>
-            <td>Brand</td>
-            <td>Remove</td>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Brand</th>
+            <th>Remove</th>
           </tr>
           {cartData.map((ele) => {
             return (
